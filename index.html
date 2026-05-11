@@ -116,6 +116,9 @@
 }
 
 img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
@@ -246,9 +249,45 @@ img {
     <p><strong>Tools:</strong> Git, GitHub, npm</p>
 </div>
 
-    
+    <div class="card">
+    <h2>Security</h2>
+    <p>
+        Security was implemented throughout the application to ensure safe handling of user data and secure authentication.
+    </p>
+    <ul>
+        <li><strong>Password Security:</strong> Passwords are encrypted using bcrypt before being stored in the database.</li>
+        <li><strong>Authentication:</strong> JWT tokens are used to manage secure user sessions.</li>
+        <li><strong>Protected Routes:</strong> Middleware ensures only authenticated users can access sensitive endpoints.</li>
+        <li><strong>Data Protection:</strong> Environment variables are used to securely store sensitive configuration data.</li>
+    </ul>
+</div>
 
-    
+    <div class="card">
+    <h2>Project Showcase</h2>
+    <p>
+        A visual overview of the application including core interfaces and system functionality.
+    </p>
+        
+    <h3>Project Poster</h3>
+    <img src="images/poster.png" alt="Project Poster">
 
+    <h3>Authentication</h3>
+    <img src="images/login.png" alt="Login Screen">
+
+    <h3>Main Dashboard</h3>
+    <img src="images/dashboard.png" alt="Dashboard Screen">
+
+    <h3>Statistics & Insights</h3>
+    <img src="images/stats.png" alt="Statistics Screen">
+
+    <h3>Health Articles</h3>
+    <img src="images/articles.png" alt="Articles Screen">
+
+    <h3>Supplements Information</h3>
+    <img src="images/supplements.png" alt="Supplements Screen">
+
+    <h3>Cloud Deployment</h3>
+    <img src="images/cloud.png" alt="Cloud Deployment">
+</div>
 </body>
 </html>
