@@ -58,14 +58,20 @@
             font-weight: 500;
         }
 
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-            margin-bottom: 20px;
-            border-left: 5px solid #22c55e;
-        }
+       .card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    margin-bottom: 20px;
+    border-left: 5px solid #22c55e;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
 
         .button {
             display: inline-block;
@@ -261,6 +267,7 @@ img {
             <p>Generates trends and statistics based on user health data.</p>
         </div>
     </div>
+    </div
 
 
     <div class="card">
@@ -303,6 +310,7 @@ img {
 
     <h3>Encryption</h3>
     <img src="images/encryption.png" alt="Encrypted Password">
+    </div
         
   
 <footer class="footer">
