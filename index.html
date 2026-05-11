@@ -8,18 +8,28 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
             padding: 0 20px;
             line-height: 1.6;
-            background-color: #f4fbf6;
+            background-color: #f4e1a1;
             color: #1f2937;
-        }
-
+         }
+        
+         .hero {
+          text-align: center;
+          margin-bottom: 40px;
+         }
+        
         h1 {
             font-size: 2.5em;
             margin-bottom: 5px;
-            color: #166534;
+            color: #2e7d32;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            margin: 10px 0 20px;
         }
 
         h2 {
@@ -57,7 +67,7 @@
             display: inline-block;
             margin-top: 20px;
             padding: 10px 15px;
-            background: #16a34a;
+            background: #2e7d32;
             color: white;
             text-decoration: none;
             border-radius: 8px;
@@ -67,13 +77,42 @@
         .button:hover {
             background: #15803d;
         }
+        
+        iframe {
+        border-radius: 10px;
+        margin-top: 15px;
+     }
     </style>
 </head>
 
 <body>
 
+    <section class="hero">
     <h1>Reproductive Health Application</h1>
+    <p class="tagline">
+        A mobile app that helps users track, understand, and manage their reproductive health with personalised insights.
+    </p>
     <p class="author"><strong>By:</strong> Sylvia Martin</p>
+    <div class="buttons">
+        <a href="https://youtu.be/rNAOGEu9YU0?is=COScSeMTaJS8SOdA" class="button">View Demo</a>
+        <a href="https://github.com/SylviaMartin1/repro-health-app-2026" class="button">GitHub</a>
+        <a href="https://github.com/SylviaMartin1/repro-health-app-2026" class="button">Documentation</a>
+    </div>
+    </section>
+
+  <div class="card" id="demo">
+    <h2>Demo</h2>
+    <iframe width="100%" height="400"
+        src="https://www.youtube.com/embed/rNAOGEu9YU0"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+    <p>
+        This demo showcases the core features of the application, including health tracking,
+        personalised insights, and reminder functionality.
+    </p>
+</div>
+    </div>
 
     <div class="card">
         <h2>About the Project</h2>
