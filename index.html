@@ -126,17 +126,29 @@ img {
     margin-top: 30px;
 }
 
-.footer-links a {
-    margin: 0 10px;
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+    margin-top: 50px;
+    padding: 20px;
+    background: #2e7d32;
+    color: white;
+    border-radius: 12px 12px 0 0;
+    font-size: 0.9rem;
+}
+
+.footer a {
     color: #f4e1a1;
     text-decoration: none;
     font-weight: bold;
 }
 
-.footer-links a:hover {
+.footer a:hover {
     text-decoration: underline;
 }
-
         
     </style>
 </head>
@@ -294,15 +306,14 @@ img {
         
   
 <footer class="footer">
-    <p><strong>Reproductive Health Application</strong></p>
-    <p>Created by Sylvia Martin</p>
-    <p>📧 sylvia.martin@email.com</p>
-    <p class="footer-links">
-        <a href="https://github.com/SylviaMartin1" target="_blank">GitHub</a>
-        |
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/" target="_blank">LinkedIn</a>
-    </p>
-    <p>© 2026 Sylvia Martin</p>
+    <span><strong>Reproductive Health Application</strong></span>
+    <span>• Created by Sylvia Martin</span>
+    <span>• 📧 sylvia.martin@email.com</span>
+    <span class="footer-links">
+        • <a href="https://github.com/SylviaMartin1" target="_blank">GitHub</a>
+        • <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/" target="_blank">LinkedIn</a>
+    </span>
+    <span>• © 2026</span>
 </footer>
        
 </body>
