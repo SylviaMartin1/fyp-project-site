@@ -94,7 +94,28 @@
 
         .buttons {
     margin-top: 20px;
-}      
+}
+
+        .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.feature-box {
+    background: #f9fafb;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #2e7d32;
+}
+
+.feature-box h3 {
+    margin-top: 0;
+    color: #2e7d32;
+}
+
+        
     </style>
 </head>
 
@@ -147,16 +168,66 @@
 </div>
 
     <div class="card">
-        <h2>Key Features</h2>
-        <ul>
-            <li>User authentication with email and password</li>
-            <li>Reproductive health tracking</li>
-            <li>Lifestyle tracking (sleep, water, diet, fitness)</li>
-            <li>Reminders and notifications</li>
-            <li>Educational articles and supplement information</li>
-            <li>Personalised statistics and insights</li>
-        </ul>
+    <h2>System Overview</h2>
+    <p>
+        The application is implemented as a full-stack system with a mobile frontend,
+        backend API layer, and cloud-based database infrastructure.
+    </p>
+    <ul>
+        <li><strong>Frontend:</strong> React Native application built with Expo for cross-platform mobile deployment</li>
+        <li><strong>Backend:</strong> Node.js and Express REST API handling requests and application logic</li>
+        <li><strong>Database:</strong> MongoDB Atlas used for secure and persistent cloud data storage</li>
+        <li><strong>Authentication:</strong> JWT-based session management with encrypted password storage using bcrypt</li>
+    </ul>
+    <p>
+        The system follows a client–server architecture where the mobile application communicates with
+        the backend API, which processes requests and interacts with the database before returning responses
+        to the frontend.
+    </p>
     </div>
+
+    
+
+   <div class="card">
+    <h2>Key Features</h2>
+       
+    <div class="features">
+        <div class="feature-box">
+            <h3>Health Logging</h3>
+            <p>Users can record reproductive health data and track changes over time.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Medication Tracking</h3>
+            <p>Allows users to log medication intake and maintain adherence records.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Health Checkup Records</h3>
+            <p>Users can store and manage past and upcoming medical checkups.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Lifestyle Tracking</h3>
+            <p>Tracks sleep, hydration, diet, exercise, and general wellbeing.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Smart Reminders</h3>
+            <p>Automated notifications for medication, appointments, and health events.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Educational Content</h3>
+            <p>Provides access to health information using external data sources.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Personalised Insights</h3>
+            <p>Generates trends and statistics based on user health data.</p>
+        </div>
+    </div>
+</div>
 
     <div class="card">
         <h2>Technologies</h2>
